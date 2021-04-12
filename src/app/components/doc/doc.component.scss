@@ -1,0 +1,38 @@
+.container{
+  position: fixed;
+  left: 0;
+  top: 58px;
+  height: calc(100% - 58px);
+  width: 300px;
+}
+img{
+  margin-top: 25px;
+  padding-left: 10px;
+}
+a{
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.content
+{
+  position: absolute;
+  left: 23%;
+  top: 13%;
+  height: 100%;
+  width: 75%;
+}
+.content p
+{
+  text-align: justify-all;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 5px;
+}
+h2
+{
+  padding-left: 10px;
+}

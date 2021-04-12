@@ -6,37 +6,47 @@
 
 
   <div class="row w3-center">
-    <div class="col-lg-8 col-md-8 col-sm-12">
-      <p><img style="width: 735px" src="../../../assets/images/contact-us-figure.png"></p>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <p><img style="width: 682px" src="../../../assets/images/contact-us-figure.png"></p>
 
-      <h3>We are pleased to Receive a
-        message from You With
-        Your Agreement �
-      </h3>
-      <a href="#" class="button">
-        <span class="button-text">Get Start Now</span>
-      </a>
+      <div class="media">
+        <div class="media-left media-middle">
+          <a>
+            <img class="media-object" src="assets/images/pickup.png" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">We are pleased to Receive a
+            message from You With
+            Your Agreement 😊</h4>
+          <button class="w3-btn w3-large w3-round-xxlarge shadow w3-margin w3-indigo">
+            Get Start Now
+          </button>
+        </div>
+      </div>
+
     </div>
-    
-    <div id="contactus" class="col-lg-4 col-md-4 col-sm-12">
+
+    <div id="contactus" class="col-lg-4 col-md-4 col-sm-12 shadow w3-animate-right w3-margin-right shadow">
       <div>
-        <h1 class="serv">Send Your Info</h1>
+        <h3 class="w3-center w3-margin">Send Your Info</h3>
         <form action="/contact" id="contact" method="post">
+          <input type="text" class="form-control w3-margin w3-round-large" placeholder="Name" required name="name">
 
-          <input type="text" class="form-control" placeholder="Name" required name="name">
+          <input type="email" class="form-control w3-margin w3-round-large" placeholder="Email" required name="email">
 
-          <input type="email" class="form-control" placeholder="Email" required name="email">
+          <input type="text" class="form-control w3-margin w3-round-large" placeholder="Phone" required name="phone" >
 
-          <input type="text" class="form-control"  placeholder="Phone" required name="phone" >
-
-          <textarea name="message" class="form-control" placeholder="Write Your Message" required rows="5" wrap="virtual"></textarea>
-          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+          <textarea name="message" class="form-control w3-margin w3-round-large" placeholder="Write Your Message" required rows="5" wrap="virtual"></textarea>
+          <button type="submit" style="display: block;width: 100%" class="shadow w3-btn w3-indigo w3-large w3-margin w3-round-xxlarge">
+            Get Start Now
+          </button>
         </form>
         <br>
         <!-- نهاية نموذج الاتصال  -->
       </div>
     </div>
-    
+
   </div>
 
 </div>
