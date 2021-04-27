@@ -9,8 +9,10 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import {FeatureComponent} from './components/feature/feature.component';
 import {ContactComponent} from './components/contactus/contact.component';
 import {SideBarMenuComponent} from './components/layout/sidebarmenu/sidebarmenu.component';
-import {DocComponent} from './components/doc/doc.component';
+import {PrepareshipmentComponent} from './components/prepareshipment/prepareshipment.component';
 import {AccountingComponent} from './components/accounting/accounting.component';
+import {PickupComponent} from './components/pickup/pickup.component';
+import {CouriersheetComponent} from './components/couriersheets/couriersheet.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import {AccountingComponent} from './components/accounting/accounting.component'
     FeatureComponent,
     ContactComponent,
     SideBarMenuComponent,
-    DocComponent,
-    AccountingComponent
+    PrepareshipmentComponent,
+    AccountingComponent,
+    PickupComponent,
+    CouriersheetComponent
   ],
   imports: [
     BrowserModule,
