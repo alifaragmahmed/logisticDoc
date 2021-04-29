@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarMenuComponent implements OnInit {
 
+  doc: any = document;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  loadPdf(url) {
+    let frame: any = document.getElementById('frame');
+    frame.src = "https://docs.google.com/viewerng/viewer?url=/assets/pdf/" + url;
+  }
 
 }
