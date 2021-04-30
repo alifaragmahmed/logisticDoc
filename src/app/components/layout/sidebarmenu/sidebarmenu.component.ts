@@ -15,9 +15,11 @@ export class SideBarMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loadPdf(url:any) {
+  loadPdf(file:any) {
+    file = this.translate.currentLang == 'ar'? file + '_ar' : file;
+
     let frame: any = document.getElementById('frame');
-    frame.src = "https://docs.google.com/viewerng/viewer?url=/assets/pdf/" + url;
+    frame.src = "https://docs.google.com/viewerng/viewer?url=/assets/pdf/" + file + ".pdf";
   }
 
 }
