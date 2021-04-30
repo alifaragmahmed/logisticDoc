@@ -1,21 +1,21 @@
-<div class="container shadow" >
-  <div class="row">
-      <div class="row brand">
+<div class="sidebar shadow w3-white w3-padding" >
+  <div class="">
+      <div class="">
         <img src="assets/images/truck.png" width="150px">
       </div>
       <hr>
-      <a href="/" class=""><i class="fa fa-chevron-right"></i> Introduction</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Get started</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Dashboard</a>
-      <a (click)="loadPdf('prepareshipment.pdf')" ><i class="fa fa-chevron-right"></i> Prepare Shipment</a>
-      <a routerLink="/accounting"><i class="fa fa-chevron-right"></i> Accounting</a>
-      <a routerLink="/pickup"><i class="fa fa-chevron-right"></i> Pickup</a>
-      <a routerLink="/courier-sheet"><i class="fa fa-chevron-right"></i> Courier Sheets</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Companies&Receivers</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Users&Roles</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Settings</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Reports</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Website</a>
+      <a href="/" class=""><i class="fa fa-chevron-right"></i>{{"introduction"|translate}}</a>
+      <a href="/"><i class="fa fa-chevron-right"></i>{{"get_started"|translate}}</a>
+      <a href="/"><i class="fa fa-chevron-right"></i> {{"dashboard"|translate}}</a>
+      <a (click)="loadPdf('prepareshipment.pdf')" ><i class="fa fa-chevron-right"></i> {{"prepare_shipment"|translate}}</a>
+      <a (click)="loadPdf('Accounting_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"accounting"|translate}}</a>
+      <a (click)="loadPdf('pickup_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"pickup"|translate}}</a>
+      <a (click)="loadPdf('courier_Sheets_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"courier_sheets"|translate}}</a>
+      <a (click)="loadPdf('company&receivers_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"companies_receivers"|translate}}</a>
+      <a (click)="loadPdf('usersandRoles_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"users_roles"|translate}}</a>
+      <a (click)="loadPdf('settings_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"settings"|translate}}</a>
+      <a href="/"><i class="fa fa-chevron-right"></i> {{"reports"|translate}}</a>
+      <a (click)="loadPdf('website_ar.pdf')"><i class="fa fa-chevron-right"></i> {{"website"|translate}}</a>
   </div>
 </div>
  <div class="shadow content">

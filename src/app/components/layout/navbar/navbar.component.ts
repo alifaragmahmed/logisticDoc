@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Event, NavigationStart, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   event: any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public translate:TranslateService) {
 
     this.event =this.router.events
           .subscribe(
@@ -26,14 +27,28 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let lang: any = localStorage.getItem('lang');
+    this.translate.use(lang);
   }
 
   addClassToNavBar() {
-    document.getElementById('navbar').className = "w3-bar w3-padding navbar w3-large w3-indigo shadow";
+    let navbar: any = document.getElementById('navbar');
+    navbar.className = "w3-bar w3-padding navbar w3-large w3-indigo shadow";
   }
 
   removeClassToNavBar() {
-    document.getElementById('navbar').className = "w3-bar w3-text-white w3-padding navbar w3-large";
+    let navbar: any = document.getElementById('navbar');
+    navbar.className = "w3-bar w3-text-white w3-padding navbar w3-large";
   }
 
+  setTrans(lang: string) {
+    let langSheet: any = document.getElementById('langSheet');
+    if (lang == 'ar') {
+      langSheet.href = "assets/css/ar.css";
+    } else {
+      langSheet.href = ""; 
+    }
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
+  }
 }

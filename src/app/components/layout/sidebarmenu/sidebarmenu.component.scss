@@ -1,9 +1,9 @@
-.container{
-  position: fixed;
-  left: 0;
+.sidebar{
+  position: fixed; 
   top: 58px;
   height: calc(100% - 58px);
   width: 300px;
+  z-index: 1;
 }
 img{
   margin-top: 25px;
@@ -35,4 +35,8 @@ a{
 h2
 {
   padding-left: 10px;
+}
+
+a{
+  cursor: pointer;
 }

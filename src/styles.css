@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
 
-*, .font {
+*, .font, h1, h3, h2, h4, h5, h6 {
   font-family: 'Tajawal', sans-serif;
 }
 

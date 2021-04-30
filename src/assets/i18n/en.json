@@ -1,0 +1,56 @@
+{
+    "introduction":"Introduction",
+    "get_started":"Get Started",
+    "dashboard":"Dashboard",
+    "prepare_shipment":"Prepare Shipment",
+    "accounting":"Accounting",
+    "pickup":"Pickup",
+    "courier_sheets":"Courier Sheet",
+    "companies_receivers":"Companies&Receiver",
+    "users_roles":"Users&Roles",
+    "settings":"Settings",
+    "reports":"Reports",
+    "website":"Wesite",
+    "features":"Features",
+    "doc":"Docmentation",
+    "get_in_touch":"Get In Toch",
+    "demo":"Demo",
+    "home":{
+        "title":" A Best-In-Class Asset Tracking And Logistics Enterprise Management Solution",
+        "get_start":"Get Start",
+        "manage":" Manage All Your Shipment And Tracking It",
+        "mobile_app":"Mobile App",
+        "easeOfUse":"Ease of useSmooth and easy-to-use for Couriers Built In Easy Tools",
+        "read_more":"Read More"
+    },
+    "featurespage":{
+        "track_trace":"Track and Trace",
+        "track_trace_body":"Allow customers to track orderstatus and find accurate ETA.",
+        "more_track":"More Track",
+        "more_track_body":"Allow customers to track Shipment in Other Website",
+        "print_shipment":"Print Shipment",
+        "print_shipment_body":" Print One Shipment Or more Than One and print shipment labels",
+        "mobile_app_body":"  Ease of use Smooth and easy-to-use for Couriers Built In Easy Tools",
+        "users_roles_body":"   Create Your Own Roles And Give Each Role Any Permissions",
+        "business_report":"Business Report",
+        "business_report_body":" Manage Your Business With More Than 20+ Report",
+        "manage_your_accounting":"Manage Your Accounting",
+        "manage_your_accounting_body":" Easy To Manage Shipment Accounting And All Company Expenses",
+        "mailbox":"MailBox",
+        "mailbox_body":"Send Email To Your Customer with Mailbox in Dashboar",
+        "pickup_body":" Customer Can Send Pickup To You Via Web Site Form",
+        "features_and_benefits":"Features And Benefits"
+
+    },
+    "getinTouchPage":{
+        "getintouchBody":"We are pleased to Receive a message from You With",
+        "agreement":"Your Agreement",
+        "send_your_info":"Send Your Info",
+        "name":"Name",
+        "email":"Email",
+        "phone":"Phone number",
+        "message":"Write Your Message",
+        "send":"Send"
+    }
+   
+}
