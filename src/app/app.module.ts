@@ -9,10 +9,6 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import {FeatureComponent} from './components/feature/feature.component';
 import {ContactComponent} from './components/contactus/contact.component';
 import {SideBarMenuComponent} from './components/layout/sidebarmenu/sidebarmenu.component';
-import {PrepareshipmentComponent} from './components/prepareshipment/prepareshipment.component';
-import {AccountingComponent} from './components/accounting/accounting.component';
-import {PickupComponent} from './components/pickup/pickup.component';
-import {CouriersheetComponent} from './components/couriersheets/couriersheet.component';
 
 @NgModule({
   declarations: [
@@ -23,10 +19,6 @@ import {CouriersheetComponent} from './components/couriersheets/couriersheet.com
     FeatureComponent,
     ContactComponent,
     SideBarMenuComponent,
-    PrepareshipmentComponent,
-    AccountingComponent,
-    PickupComponent,
-    CouriersheetComponent
   ],
   imports: [
     BrowserModule,
