@@ -6,16 +6,23 @@
       <img src="/assets/images/logo.png" width="60px" alt="">
     </a>
   </div>
-  <div class="w3-bar-item"  >
-    <a href="#" routerLink="/features" >FEATURES</a>
+  <div class="w3-bar-item"   >
+    <a href="#" routerLink="/features" >{{"features"|translate}}</a>
   </div>
   <div class="w3-bar-item"  >
-    <a href="#" routerLink="/doc" >DOC</a>
+    <a href="#" routerLink="/doc" >{{"doc"|translate}}</a>
   </div>
   <div class="w3-bar-item"  >
-    <a href="#" routerLink="/contact" >GET IN TOUCH</a>
+    <a href="#" routerLink="/contact" >{{"get_in_touch"|translate}}</a>
   </div>
   <div class="w3-bar-item"  >
-    <a href="#" >DEMO</a>
+    <a href="#" >{{"demo"|translate}}</a>
   </div>
+
+ <div class="w3-right	w3-round-medium lang-item" *ngIf="translate.currentLang == 'ar'" >
+    <button class="w3-button w3-round-xxlarge w3-white" (click)="setTrans('en')">English</button>
+  </div>
+  <div class="w3-right w3-round-medium lang-item" *ngIf="translate.currentLang == 'en'" >
+    <button class="w3-button w3-round-xxlarge w3-white"  (click)="setTrans('ar')">اللغه العربيه</button>
+  </div> 
 </div>

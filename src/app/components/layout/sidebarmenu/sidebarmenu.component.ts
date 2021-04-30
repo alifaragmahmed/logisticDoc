@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sidebarmenu',
@@ -9,14 +10,16 @@ export class SideBarMenuComponent implements OnInit {
 
   doc: any = document;
 
-  constructor() { }
+  constructor(public translate:TranslateService) { }
 
   ngOnInit(): void {
   }
 
-  loadPdf(url) {
+  loadPdf(file:any) {
+    file = this.translate.currentLang == 'ar'? file + '_ar' : file;
+
     let frame: any = document.getElementById('frame');
-    frame.src = "https://docs.google.com/viewerng/viewer?url=/assets/pdf/" + url;
+    frame.src = "https://docs.google.com/viewerng/viewer?url=/assets/pdf/" + file + ".pdf";
   }
 
 }

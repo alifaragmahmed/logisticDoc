@@ -9,6 +9,13 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import {FeatureComponent} from './components/feature/feature.component';
 import {ContactComponent} from './components/contactus/contact.component';
 import {SideBarMenuComponent} from './components/layout/sidebarmenu/sidebarmenu.component';
+import {TranslateModule,TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader'
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -22,9 +29,25 @@ import {SideBarMenuComponent} from './components/layout/sidebarmenu/sidebarmenu.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+    }
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
+
+
+
+
+
+

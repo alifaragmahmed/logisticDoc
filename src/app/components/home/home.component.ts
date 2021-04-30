@@ -10,10 +10,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let self = this;
+    const self = this;
 
     document.onscroll = function(e){
-      if (window.location.pathname == "/home" || window.location.pathname == "/") {
+      if (window.location.pathname == '/home' || window.location.pathname == '/') {
         if (window.scrollY > 5) {
           self.addClassToNavBar();
         } else {
@@ -24,12 +24,14 @@ export class HomeComponent implements OnInit {
   }
 
 
-  addClassToNavBar() {
-    document.getElementById('navbar').className = "w3-bar w3-padding navbar w3-large w3-indigo shadow";
+  addClassToNavBar() { 
+    let navbar: any = document.getElementById('navbar');
+    navbar.className = 'w3-bar w3-padding navbar w3-large w3-indigo shadow';
   }
-
+  
   removeClassToNavBar() {
-    document.getElementById('navbar').className = "w3-bar w3-text-white w3-padding navbar w3-large";
+    let navbar: any = document.getElementById('navbar');
+    navbar.className = 'w3-bar w3-text-white w3-padding navbar w3-large';
   }
 
 }
