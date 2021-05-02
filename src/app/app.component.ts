@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {any} from 'codelyzer/util/function';
 
 @Component({
   selector: 'app-root',

@@ -1,38 +1,23 @@
 <div class="sidebar shadow w3-white w3-padding" >
   <div class="">
       <div class="">
-        <img src="assets/images/truck.png" width="150px">
+        <img src="assets/images/truck.png" width="150px" style="{{translate.currentLang=='ar'?'transform: rotateY(\n'+'189deg\n'+')':''}}">
       </div>
       <hr>
-<<<<<<< HEAD
-      <a href="/" class=""><i class="fa fa-chevron-right"></i> Introduction</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Get started</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Dashboard</a>
-      <a (click)="loadPdf('prepareshipment.pdf')" ><i class="fa fa-chevron-right"></i> Prepare Shipment</a>
-      <a (click)="loadPdf('Accounting_ar.pdf')"><i class="fa fa-chevron-right"></i> Accounting</a>
-      <a (click)="loadPdf('pickup_ar.pdf')"><i class="fa fa-chevron-right"></i> Pickup</a>
-      <a (click)="loadPdf('courier_Sheets_ar.pdf')"><i class="fa fa-chevron-right"></i> Courier Sheets</a>
-      <a (click)="loadPdf('company&receivers_ar.pdf')"><i class="fa fa-chevron-right"></i> Companies&Receivers</a>
-      <a (click)="loadPdf('usersandRoles_ar.pdf')"><i class="fa fa-chevron-right"></i> Users&Roles</a>
-      <a (click)="loadPdf('settings_ar.pdf')"><i class="fa fa-chevron-right"></i> Settings</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> Reports</a>
-      <a (click)="loadPdf('website_ar.pdf')"><i class="fa fa-chevron-right"></i> Website</a>
-=======
-      <a href="/" class=""><i class="fa fa-chevron-right"></i>{{"introduction"|translate}}</a>
-      <a href="/"><i class="fa fa-chevron-right"></i>{{"get_started"|translate}}</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> {{"dashboard"|translate}}</a>
-      <a (click)="loadPdf('prepareshipment')" ><i class="fa fa-chevron-right"></i> {{"prepare_shipment"|translate}}</a>
-      <a (click)="loadPdf('Accounting_ar')"><i class="fa fa-chevron-right"></i> {{"accounting"|translate}}</a>
-      <a (click)="loadPdf('pickup_ar')"><i class="fa fa-chevron-right"></i> {{"pickup"|translate}}</a>
-      <a (click)="loadPdf('courier_Sheets_ar')"><i class="fa fa-chevron-right"></i> {{"courier_sheets"|translate}}</a>
-      <a (click)="loadPdf('company&receivers_ar')"><i class="fa fa-chevron-right"></i> {{"companies_receivers"|translate}}</a>
-      <a (click)="loadPdf('usersandRoles_ar')"><i class="fa fa-chevron-right"></i> {{"users_roles"|translate}}</a>
-      <a (click)="loadPdf('settings_ar')"><i class="fa fa-chevron-right"></i> {{"settings"|translate}}</a>
-      <a href="/"><i class="fa fa-chevron-right"></i> {{"reports"|translate}}</a>
-      <a (click)="loadPdf('website_ar')"><i class="fa fa-chevron-right"></i> {{"website"|translate}}</a>
->>>>>>> 81d8d160787c749c7ad9e228c0343b02d0848003
+      <a (click)="loadPdf('introduction')" class=""><i class="fas fa-hands w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"introduction"|translate}}</a>
+<!--      <a href="/"><i class="fas fa-star w3-padding-small"></i> {{"get_started"|translate}}</a>-->
+      <a (click)="loadPdf('dashboard')"><i class="fas fa-tachometer-alt w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"dashboard"|translate}}</a>
+      <a (click)="loadPdf('prepareShipment')" ><i class="fas fa-file-plus w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"prepare_shipment"|translate}}</a>
+      <a (click)="loadPdf('Accounting')"><i class="far fa-money-bill-alt w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"accounting"|translate}}</a>
+      <a (click)="loadPdf('Pickup')"><i class="fas fa-truck-pickup w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"pickup"|translate}}</a>
+      <a (click)="loadPdf('couriersheets')"><i class="fas fa-table w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"courier_sheets"|translate}}</a>
+      <a (click)="loadPdf('CompanyAndReceivers')"><i class="far fa-building w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"companies_receivers"|translate}}</a>
+      <a (click)="loadPdf('usersandroles')"><i class="fas fa-user-shield w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"users_roles"|translate}}</a>
+      <a (click)="loadPdf('settings')"><i class="fas fa-cogs w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"settings"|translate}}</a>
+      <a (click)="loadPdf('reports')"><i class="fas fa-chart-bar w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"reports"|translate}}</a>
+      <a (click)="loadPdf('wesite')"><i class="far fa-browser w3-padding-small {{translate.currentLang=='ar'?'w3-right':''}}"></i> {{"website"|translate}}</a>
   </div>
 </div>
- <div class="shadow content">
-   <iframe src="" id="frame" style="width: 100%;height: 600px;border: none;" frameborder="0"></iframe>
+ <div id="contentfram" class="shadow {{translate.currentLang=='ar'?'content_ar':'content_en'}}">
+   <iframe src="" id="frame"  style="width: 100%;height: 600px;border: none;" frameborder="0"></iframe>
 </div>

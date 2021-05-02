@@ -1,5 +1,5 @@
 .sidebar{
-  position: fixed; 
+  position: fixed;
   top: 58px;
   height: calc(100% - 58px);
   width: 300px;
@@ -16,7 +16,14 @@ a{
   padding: 10px;
 }
 
-.content
+.content_ar
+{
+  position: absolute;
+  top: 13%;
+  height: 100%;
+  width: 75%;
+}
+.content_en
 {
   position: absolute;
   left: 23%;

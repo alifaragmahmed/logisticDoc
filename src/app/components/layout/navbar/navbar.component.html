@@ -3,7 +3,7 @@
 <div class="w3-bar w3-text-white w3-padding navbar w3-large" id="navbar" >
   <div class="w3-bar-item" >
     <a href="#" routerLink="/home" >
-      <img src="/assets/images/logo.png" width="60px" alt="">
+      <img src="/assets/images/logo.png" width="60px" alt="" style="{{translate.currentLang=='ar'?'transform: rotateY(\n'+'190deg\n'+')':''}}">
     </a>
   </div>
   <div class="w3-bar-item"   >
@@ -24,5 +24,5 @@
   </div>
   <div class="w3-right w3-round-medium lang-item" *ngIf="translate.currentLang == 'en'" >
     <button class="w3-button w3-round-xxlarge w3-white"  (click)="setTrans('ar')">اللغه العربيه</button>
-  </div> 
+  </div>
 </div>

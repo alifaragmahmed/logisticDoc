@@ -46,9 +46,10 @@ export class NavbarComponent implements OnInit {
     if (lang == 'ar') {
       langSheet.href = "assets/css/ar.css";
     } else {
-      langSheet.href = ""; 
+      langSheet.href = "";
     }
-    this.translate.use(lang);
+
     localStorage.setItem('lang', lang);
+    this.translate.use(lang);
   }
 }
